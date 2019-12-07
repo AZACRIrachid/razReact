@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="module" src="didact.js" ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+        <div id="root"></div>
+        <script type="text/babel">
+         /** @jsx Didact.createElement */
+            /*const element = Didact.createElement('div',{id:'foo'},
+            
+                Didact.createElement('h1',null,'Bienvenue sur le site'),
+                Didact.createElement('a',{href:'#'},'En savoir plus !')
+            )
+            console.log(element);*/
+           
+            const element = (
+                <div id="foo">
+                    <h1> bienvenue je la!</h1>
+                    <a href="#"> savoir et toi </a>    
+                </div>
+            )
+            Didact.render(element ,document.getElementById("root"))
+        </script>
+
+</body>
+</html>
